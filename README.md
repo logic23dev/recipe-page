@@ -4,8 +4,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Click here!]()
-- Live Site URL: [Click here!]()
+- Solution URL: [Click here!](https://github.com/logic23dev/recipe-page)
+- Live Site URL: [Click here!](https://logic23dev.github.io/recipe-page/)
 
 ### Built with
 
