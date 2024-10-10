@@ -50,17 +50,153 @@ svg {
   display: block;
 }
 
-input,
-button,
-optgroup,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
 body {
   min-height: 100vh;
-  font-size: 16px;
+  font-family: var(--ff-outfit);
+  font-size: 1rem;
+  font-weight: var(--fw-400);
   line-height: 1.5;
+  color: var(--clr-stone-600);
+  background-color: var(--clr-stone-100);
+}
+
+.main {
+  background-color: var(--clr-white);
+}
+
+.content-wrapper {
+  padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+
+h1,
+h3 {
+  font-family: var(--ff-young-serif);
+}
+
+h1 {
+  font-size: 2.1875rem;
+  color: var(--clr-stone-900);
+  font-weight: var(--fw-400);
+  line-height: 1.1;
+  margin-top: 0.625rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: var(--fw-400);
+  color: var(--clr-brown-800);
+  margin-bottom: 1.25rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--clr-stone-150);
+}
+
+.preparation {
+  background-color: var(--clr-rose-50);
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+}
+
+.preparation h2 {
+  color: var(--clr-rose-800);
+  font-weight: var(--fw-600);
+  font-size: 1.1875rem;
+  margin-bottom: 0.625rem;
+}
+
+.list {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.list li {
+  padding-left: 1.25rem;
+}
+
+.list span {
+  font-weight: var(--fw-700);
+}
+
+.ul-list li::marker {
+  font-size: 0.75rem;
+  color: var(--clr-rose-800);
+}
+
+.ol-list li::marker {
+  font-weight: var(--fw-700);
+  color: var(--clr-brown-800);
+}
+
+.table {
+  width: 100%;
+  margin-top: 1.25rem;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--fw-400);
+}
+
+.table td {
+  font-weight: var(--fw-700);
+  color: var(--clr-brown-800);
+}
+
+.table th,
+td {
+  padding: 0.625rem 1.875rem;
+}
+
+.table tr:not(:last-child) {
+  border-bottom: 1px solid var(--clr-stone-150);
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    max-width: 37.5rem;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .content-wrapper {
+    padding: 0;
+  }
+
+  h1 {
+    margin-top: 2.5rem;
+  }
+
+  .main img {
+    border-radius: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .main {
+    max-width: 45.9375rem;
+    padding: 2.5rem;
+    margin-top: 7.625rem;
+    margin-bottom: 7.625rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }
